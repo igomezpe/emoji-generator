@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Generador de emojis</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/pricing/">
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="emojis.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Generador de emojis</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    </div>
+  </nav>
+  <div class="container-fluid">
+
+    <div class="padre">
+
+      <form class="form">
+        <div class="form-group">
+          <label for="slcEmoji">Emoji</label>
+          <select class="form-control" id="slcEmoji">
+            <option value="❤️">Corazón ❤️</option>
+            <option value="🤗">Abrazo 🤗</option>
+            <option value="😘">Besito 😘</option>
+            <option value="🖤">Corazón 🖤</option>
+            <option value="🐷">Pig 🐷</option>
+            <option value="😵">Sueño 😵</option>
+            <option value="😏">Que? 😏 </option>
+            <option value="😋">Lengua😋</option>
+            <option value="🤤">Ganitas 🤤</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="txtCantidad">Cantidad</label>
+          <input class="form-control" type="number" id="txtCantidad" value="5">
+        </div>
+        
+        <div class="form-group">
+          <br>
+          <button class="btn btn-primary" id="btn_Generar" type="button">Generar</button>
+        </div>
+      </form>
+
+
+      <div class="texto-repuesta" id="respuesta">
+        <div class="form-group">
+          <label for="my-textarea">Mensaje</label>
+          <textarea id="my-textarea" class="form-control" name="" rows="3"></textarea>
+        </div>
+        <br>
+        <button id="btnCopiar" class="btn btn-secondary" type="button">Copiar</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script src="emojis.js"></script>
+</body>
+
+</html>
